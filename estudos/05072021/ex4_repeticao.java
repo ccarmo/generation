@@ -5,12 +5,13 @@ import java.util.Scanner;
 public class realizaPesquisa {
     
 
-	public static void main(String[] args) {
+   public static void main(String[] args) {
 	  
-	  Scanner leia = new Scanner(System.in);
-	  int qtd_pessoas=1,idade=0, escolha_sexo=0,escolha_perso,contador_calma=0,contador_femnervosa=0,contador_homagressivo=0,contador_outcalmo=0,contador40=0,contador18=0;
+       Scanner leia = new Scanner(System.in);
+       int qtd_pessoas=1,idade=0, escolha_sexo=0,escolha_perso,contador_calma=0,contador_femnervosa=0,contador_homagressivo=0,contador_outcalmo=0,contador40=0,contador18=0;
 	  
-      while (qtd_pessoas >= 1 && qtd_pessoas <= 150) {
+       while (qtd_pessoas >= 1 && qtd_pessoas <= 150) 
+       {
     	  
     	  //parte de inserção dos dados pelo usuário
     	  do 
