@@ -4,11 +4,10 @@ import java.util.Scanner;
 
 public class imprimeIdade {
     
-
-	public static void main(String[] args) {
+  public static void main(String[] args) {
 	  
-	  Scanner leia = new Scanner(System.in);
-	  int idade=0,contador21=0,contador50=0;
+      Scanner leia = new Scanner(System.in);
+      int idade=0,contador21=0,contador50=0;
 	  
       while (idade != -99) 
       {
@@ -22,10 +21,10 @@ public class imprimeIdade {
     	 {
     	   contador50++;
     	 }
-      }
+       }
       
-      System.out.println("Quantas pessoas tem menos de 21 anos?"+ contador21);
-      System.out.println("Quantas pessoas tem mais de 50 anos?"+ contador50);
+       System.out.println("Quantas pessoas tem menos de 21 anos?"+ contador21);
+       System.out.println("Quantas pessoas tem mais de 50 anos?"+ contador50);
        		  	  
   }
 }
