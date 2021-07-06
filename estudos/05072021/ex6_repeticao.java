@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class imprimeMedia {
     
 
-	public static void main(String[] args) {
+   public static void main(String[] args) {
 	  
-	  Scanner leia = new Scanner(System.in);
-	  int numero=1, somador=0,contador=0;
+      Scanner leia = new Scanner(System.in);
+      int numero=1, somador=0,contador=0;
 	  
       do 
       {
