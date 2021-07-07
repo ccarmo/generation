@@ -29,8 +29,8 @@ public class trabalhaVetor {
 		   } 
 		   else 
 		   {
-			 numerosimpares.add(vetor[endereco]);
-			 contaimpar++;
+		     numerosimpares.add(vetor[endereco]);
+		     contaimpar++;
 		   }
 	         }
 		
@@ -39,7 +39,7 @@ public class trabalhaVetor {
 		System.out.print("Numeros pares digitados: ");
 		for (Integer numeropar : numerospares) 
 		{
-			System.out.print(numeropar+" ");
+		   System.out.print(numeropar+" ");
 		}
 		
 		System.out.println("");
@@ -48,7 +48,7 @@ public class trabalhaVetor {
 		System.out.print("Numeros ímpares digitados: ");
 		for (Integer numeroimpar : numerosimpares) 
 		{
-			System.out.print(numeroimpar+" ");
+	            System.out.print(numeroimpar+" ");
 		}
 		System.out.println("");
 		System.out.println("A quantidade de números ímpares digitas é: "+contaimpar);
