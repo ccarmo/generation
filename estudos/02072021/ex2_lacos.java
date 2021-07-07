@@ -19,7 +19,7 @@ public class ordemCrescente {
 	  for(int contador=0;contador<numero.length;contador++) {
 		  System.out.println("Insira um número: ");  
 		  numero[contador] = leia.nextInt();
-		  }
+	   }
 	  
 	
 	  //lógica para organizar os números em ordem crescente
@@ -38,10 +38,7 @@ public class ordemCrescente {
 	  for(int contador=0;contador<numero.length;contador++) {
 		  System.out.println("\t "+numero[contador]);
 	  }
-	  
-
-	  
-			  	  
+	 		  	  
   }
 
 }
