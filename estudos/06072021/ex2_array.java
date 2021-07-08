@@ -6,9 +6,8 @@ import java.util.Scanner;
 public class trabalhaVetor {
 	
 
-	public static void main(String[] args) {
-		
-		
+	public static void main(String[] args) 
+	{	
 		/*criação das variáveis, vetores e ArrayList. O exercicio não informa como deve ser mostrados os números pares e impares digitados, 
 		entao considerei que não teria problema em utilizar ArrayList*/
 		ArrayList<Integer> numerospares = new ArrayList<>(6);
@@ -30,17 +29,17 @@ public class trabalhaVetor {
 		   } 
 		   else 
 		   {
-			 numerosimpares.add(vetor[endereco]);
-			 contaimpar++;
+		     numerosimpares.add(vetor[endereco]);
+		     contaimpar++;
 		   }
-	    }
+	         }
 		
 		
 		System.out.println("");
 		System.out.print("Numeros pares digitados: ");
 		for (Integer numeropar : numerospares) 
 		{
-			System.out.print(numeropar+" ");
+		   System.out.print(numeropar+" ");
 		}
 		
 		System.out.println("");
@@ -49,7 +48,7 @@ public class trabalhaVetor {
 		System.out.print("Numeros ímpares digitados: ");
 		for (Integer numeroimpar : numerosimpares) 
 		{
-			System.out.print(numeroimpar+" ");
+	            System.out.print(numeroimpar+" ");
 		}
 		System.out.println("");
 		System.out.println("A quantidade de números ímpares digitas é: "+contaimpar);
