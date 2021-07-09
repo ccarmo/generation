@@ -3,10 +3,10 @@ package model;
 public class Animal {
 	
 	
-	private String nome;
-	private int    idade;
-	private float tamanho;
-	private float peso;
+	private String  nome;
+	private int     idade;
+	private float   comprimento;
+	private float   peso;
 	private boolean xixi;
 	
 	
@@ -42,7 +42,7 @@ public class Animal {
 		return comprimento;
 	}
 	
-	public float setComprimento(float comprimento){
+	public void setComprimento(float comprimento){
 	    this.comprimento = comprimento;	
 	}
 	

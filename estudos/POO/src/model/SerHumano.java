@@ -1,44 +1,45 @@
 package model;
 
-
+import java.util.Scanner;
+ 
 public class SerHumano {
 	
 	
 	public static void main(String[] args){
 		
-      private boolean interacao;
+      boolean interacao;
 	  Scanner leia = new Scanner(System.in);
-	  private int escolha;
+	  int escolha;
 	  do{
-	    
-	    System.out.println("VocÃª estÃ¡ num sÃ­tio e cuida de trÃªs lindos bichinhos: ");
-		System.out.println("Mas vocÃª estÃ¡ em dÃºvida se quer interagir com eles ou ir fazer o almoÃ§o. O que vocÃª quer fazer?");
-		System.out.println("1 - Ir fazer o almoÃ§o");
+		
+	    System.out.println("Você está num sítio e cuida de três lindos bichinhos: ");
+		System.out.println("Mas você está em dúvida se quer interagir com eles ou ir fazer o almoço. O que você quer fazer?");
+		System.out.println("1 - Ir fazer o almoço");
 		System.out.println("2 - Interagir com eles");
 		escolha = leia.nextInt();
 		    if(escolha == 1) 
 			{
 				interacao = false;
-				System.out.println("VocÃª nÃ£o tem coraÃ§Ã£o!");
+				System.out.println("Você não tem coração!");
+				System.out.println("");
 			}
 			else
 			{
 				interacao = true;
-				interagir();
+				
+				System.out.println("Com qual animal você quer interagir?");
+				  System.out.println("1 - Um labrador caramelo");
+				  System.out.println("2 - Um cavalo branco");
+			      System.out.println("3 - Uma preguiça que fica numa Árvore");
+				  escolha = leia.nextInt();
+				  switch(escolha){
+					  case 1:
+						 Cachorro labrador = new Cachorro("Paçoca",2,1.2f,40.0f,"Labrador");
+						 labrador.correr();
+						 labrador.emitirLatido();
+				      break;
+				  }	
 		    }
-	   } while (interacao = false);
-	
-	   private void interagir(){
-		  System.out.println("Com qual animal vocÃª quer interagir?");
-		  System.out.println("1 - Um labrador caramelo");
-		  System.out.println("2 - Um cavalo branco");
-	      System.out.println("3 - Uma preguiÃ§a que fica numa Ã¡rvore");
-		  escolha = leia.nextInt;
-		  switch(escolha){
-			  case 1:
-			     Cachorro labrador = new Cachorro("PaÃ§oca",2,1.2,40.0,"Labrador");
-				 labrador.correr();
-				 labrador.emitirLatido();
-		      break;
-		  }	  
+	   } while (interacao == false);
+	}
 }
