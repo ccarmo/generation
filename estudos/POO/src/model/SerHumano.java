@@ -36,7 +36,8 @@ public class SerHumano {
 					  case 1:
 						 Cachorro labrador = new Cachorro("Paçoca",2,1.2f,40.0f,"Labrador");
 						 labrador.correr();
-						 labrador.emitirLatido();
+						 labrador.emitirSom();
+						 labrador.brincar();
 				      break;
 				  }	
 		    }

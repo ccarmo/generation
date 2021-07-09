@@ -22,12 +22,16 @@ public class Animal {
 	public void fazerXixi(boolean xixi){
 		if(xixi == true)
 		{
-          System.out.println("fez xixi");
+          System.out.println(" fez xixi");
         } 
 		else
 		{
-          System.out.println("n√£o fez xixi");
+          System.out.println(" n„o fez xixi");
         }			
+	}
+	
+	public void emitirSom() {
+		System.out.println(getNome()+" emitiu um som");
 	}
 	
 	public int getIdade(){
