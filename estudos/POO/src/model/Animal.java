@@ -1,6 +1,6 @@
 package model;
 
-public class Animal {
+public abstract class Animal {
 	
 	
 	private String  nome;
@@ -30,9 +30,7 @@ public class Animal {
         }			
 	}
 	
-	public void emitirSom() {
-		System.out.println(getNome()+" emitiu um som");
-	}
+	abstract public void emitirSom();
 	
 	public int getIdade(){
 		return idade;
@@ -57,8 +55,5 @@ public class Animal {
 	public void setNome(String nome){
 		this.nome = nome;
 	}
-	
-	
-
 	
 }

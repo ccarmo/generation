@@ -7,13 +7,13 @@ import java.util.Scanner;
 
 public class Cachorro extends Animal {
 
-     private String raca;
+   private String raca;
 	 
 	 
-	 public Cachorro (String nome, int idade, float comprimento, float peso, String raca){
+   public Cachorro (String nome, int idade, float comprimento, float peso, String raca){
 		 super(nome,idade,comprimento,peso);
 		 this.raca = raca;
-	 }
+   }
 	 
    public void correr() {
 	   List<String> cachorroCorrendo = Arrays.asList("correndo","cansado","correndo","correndo de novo");
@@ -24,7 +24,10 @@ public class Cachorro extends Animal {
    }
 
 
-
+    @Override
+    public void emitirSom() {
+    	System.out.println("Au au au");
+    }
 
 	public void brincar(){
 		System.out.println("1 - Você deu um biscoitinho");

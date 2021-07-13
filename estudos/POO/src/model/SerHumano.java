@@ -28,18 +28,18 @@ public class SerHumano {
 				interacao = true;
 				
 				System.out.println("Com qual animal você quer interagir?");
-				  System.out.println("1 - Um labrador caramelo");
-				  System.out.println("2 - Um cavalo branco");
-			      System.out.println("3 - Uma preguiça que fica numa Árvore");
-				  escolha = leia.nextInt();
-				  switch(escolha){
-					  case 1:
-						 Cachorro labrador = new Cachorro("Paçoca",2,1.2f,40.0f,"Labrador");
-						 labrador.correr();
-						 labrador.emitirSom();
-						 labrador.brincar();
-				      break;
-				  }	
+				System.out.println("1 - Um labrador caramelo");
+				System.out.println("2 - Um cavalo branco");
+			    System.out.println("3 - Uma preguiça que fica numa Árvore");
+				escolha = leia.nextInt();
+				switch(escolha){
+					case 1:
+					  Cachorro labrador = new Cachorro("Paçoca",2,1.2f,40.0f,"Labrador");
+					  labrador.correr();
+					  labrador.emitirSom();
+					  labrador.brincar();
+				    break;
+				}	
 		    }
 	   } while (interacao == false);
 	}
