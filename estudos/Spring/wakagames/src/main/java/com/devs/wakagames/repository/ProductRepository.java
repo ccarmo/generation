@@ -10,6 +10,6 @@ import com.devs.wakagames.model.Product;
 @Repository
 public interface ProductRepository extends JpaRepository<Product, Long> {
 
-     public List<Product> findAllByNameContainingIgonreCase(String name);
+     //public List<Product> findAllByNameContainingIgonreCase(String name);
 
 }
