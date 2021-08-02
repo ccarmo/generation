@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-FarmaguaApplication<farmagua>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.devs.farmagua.FarmaguaApplication",
+            "projectName": "farmagua",
+            "args": ""
+        }
+    ]
+}
