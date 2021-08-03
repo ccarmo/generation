@@ -56,11 +56,11 @@ public class Category {
 	  }
 	  
 	  
-	  public void setProduct(Product product){
+	  public void setProduct(List<Product> product){
 		  this.product = product;
 	  }
 	  
-	  public Product getProdcut(){
+	  public List<Product> getProdcut(){
 		  return this.product;
 	  }
 	  
