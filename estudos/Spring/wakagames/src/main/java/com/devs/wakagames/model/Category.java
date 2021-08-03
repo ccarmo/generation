@@ -1,7 +1,9 @@
 package com.devs.wakagames.model;
 
 import java.util.Date;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -28,11 +30,11 @@ public class Category {
 	   @Size(min = 5, max = 100)
 	   private String name;
 	   
-	   /*
-	   @OneToMany
+	   
+	   @OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
 	   @JsonIgnoreProperties("categoria")
-	   private Product product;
-	   */
+	   private List<Product> product;
+	   
 	   
 	   @Temporal(TemporalType.TIMESTAMP)
 	   private Date date = new java.sql.Date(System.currentTimeMillis());
@@ -53,7 +55,7 @@ public class Category {
 	      return this.name;
 	  }
 	  
-	  /*
+	  
 	  public void setProduct(Product product){
 		  this.product = product;
 	  }
@@ -61,7 +63,7 @@ public class Category {
 	  public Product getProdcut(){
 		  return this.product;
 	  }
-	  */
+	  
 	  
 	  public void setDate(Date date){
 		  this.date = date;
