@@ -28,11 +28,11 @@ public class Product {
 	   @Size(min = 5, max = 100)
 	   private String name;
 	   
-	   /*
+	   
 	   @ManyToOne
 	   @JsonIgnoreProperties("categoria")
 	   private Category category;
-	   */
+	   
 
 	   @Temporal(TemporalType.TIMESTAMP)
 	   private Date date = new java.sql.Date(System.currentTimeMillis());
@@ -53,7 +53,7 @@ public class Product {
 	      return this.name;
 	  }
 	  
-	  /*
+	
 	  public void setCategory(Category category){
 		  this.category = category;
 	  }
@@ -61,7 +61,7 @@ public class Product {
 	  public Category getCategory(){
 		  return this.category;
 	  }
-	  */
+	  
 	  
 	  public void setDate(Date date){
 		  this.date = date;
