@@ -27,11 +27,11 @@ public class CategoryController {
 		return ResponseEntity.status(HttpStatus.OK).body(repository.findAll());
 	}
     
-	/*
+	
 	@GetMapping("/{name}")
 	public ResponseEntity<List<Category>> findByName(@PathVariable String name) {
-		return ResponseEntity.status(HttpStatus.OK).body(repository.findAllByNameContainingIgonreCase(name));
+		return ResponseEntity.status(HttpStatus.OK).body(repository.findAllByNameContainingIgnoreCase(name));
 	}
-	*/
+	
 
 }

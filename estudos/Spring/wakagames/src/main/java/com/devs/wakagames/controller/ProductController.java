@@ -11,6 +11,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -29,12 +30,12 @@ public class ProductController {
 	     return ResponseEntity.status(HttpStatus.OK).body(repository.findAll());
 	}
 	
-	/*
+	
 	@GetMapping("/{name}")
 	public ResponseEntity<List<Product>> findByName(@PathVariable String name) {
-		 return ResponseEntity.status(HttpStatus.OK).body(repository.findAllByNameContainingIgonreCase(name));
+		 return ResponseEntity.status(HttpStatus.OK).body(repository.findByNameContainingIgnoreCase(name));
 	}
-	*/
+	
 	
 	
 	
